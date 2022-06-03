@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viajes Disponibles</h1>
+
+    {% for Viaje in lista_viaje %}
+        <h2>El destino es {{Viaje.destino}}</h2>
+        <p>El precio es ${{Viaje.precio}}</p>
+        <p>La fecha de salida es {{Viaje.fecha_salida}}</p>
+        <h3>La fecha de regreso es {{Viaje.fecha_regreso}}</h3>
+    {% endfor %}
+
+</body>
+</html>
